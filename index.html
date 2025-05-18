@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Airport Navigation UI Mockup</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>✈️Airport Navigation</h1>
+    <div class="filter-group" aria-label="Gate filtering controls">
+      <label for="terminal-filter">Filter by Terminal:</label>
+      <select id="terminal-filter" aria-controls="gates-grid">
+        <option value="all" selected>All</option>
+        <option value="T1">Terminal 1</option>
+        <option value="T2">Terminal 2</option>
+        <option value="T3">Terminal 3</option>
+      </select>
+
+      <label for="status-filter">Filter by Status:</label>
+      <select id="status-filter" aria-controls="gates-grid">
+        <option value="all" selected>All</option>
+        <option value="on-time">On Time</option>
+        <option value="delayed">Delayed</option>
+        <option value="boarding">Boarding</option>
+      </select>
+    </div>
+  </header>
+  <main>
+    <div class="gates-grid" id="gates-grid" role="list" aria-label="Airport gates">
+      <!-- Gate cards inserted by JS -->
+    </div>
+  </main>
+<script src="script.js"></script>
+</body>
+</html>
